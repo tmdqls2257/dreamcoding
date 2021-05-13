@@ -11,18 +11,52 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 8px 12px;
+}
+.navbar_logo {
+  color: blue;
 }
 .navbar_menu {
-  width: 500px;
+  list-style: none;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  align-items: center;
+  padding-left: 0;
+}
+.navbar_menu li {
+  padding: 8px 12px;
+}
+.navbar_links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding-left: 0;
+}
+.navbar_links li {
+  padding: 8px;
+}
+.navbar_menu li:hover {
+  background-color: pink;
+  border-radius: 4px;
 }
 @media screen and (max-width: 720px) {
   .navbar {
     flex-direction: column;
+    align-items: flex-start;
   }
   .navbar_menu {
     flex-direction: column;
+    align-content: center;
+    width: 100%;
+  }
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar_links {
+    justify-content: center;
+    width: 100%;
   }
 }
