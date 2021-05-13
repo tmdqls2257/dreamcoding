@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  background-color: steelblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar_menu {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+@media screen and (max-width: 720px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar_menu {
+    flex-direction: column;
+  }
+}
